@@ -15,8 +15,11 @@
 1. Клонировать репозиторий:  
 git clone https://github.com/Malbvrg/forest-fire-project.git
 
-3. Зайти в папку проекта:   
+2. Зайти в папку проекта:   
 cd forest_fire_project  
+
+3. Создать папку data/ и поместить в нее следующий датасет parquet:  
+https://disk.360.yandex.ru/d/4n1mVYQjYEUm8w  
 
 4. Создать и активировать виртуальное окружение:  
 python -m venv venv  
