@@ -1,9 +1,13 @@
 # 🔥 Прогноз лесных пожаров  
 
 Проект посвящен природным пожарам - преимущественно лесным и степным. Отображаются точки пожаров на карте, и строится прогноз "если пожар начинается при заданных температурных условиях, какова его ожидаемая продолжительность и площадь?"  
+
 Набор данных о пожарах - https://tochno.st/datasets/fires, статистическая форма 1T-ИСДМ (Реестр природных пожаров), период - 2000-2024 гг.  
+
 Набор погодных данных - http://aisori-m.meteo.ru/, 8-срочные наблюдения на 134 российских метеостанциях: средняя скорость ветра, средняя температура воздуха между сроками, сумма осадков.  
+
 Набор координат метеостанций - https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily, Stations.txt  
+
 Данные конвертированы в Parquet.  
 
 Бэкенд: api/main.py, src/models.py, requirements.txt  
@@ -32,4 +36,7 @@ pip install -r requirements.txt
 uvicorn api.main:app --host 0.0.0.0 --port 8000  
 
 7. Запустить приложение Streamlit (во втором терминале):  
-streamlit run app.py  
+streamlit run app.py
+
+<img width="1348" height="895" alt="image" src="https://github.com/user-attachments/assets/856669dc-8107-4762-b56d-5a6749eea6c6" />
+
